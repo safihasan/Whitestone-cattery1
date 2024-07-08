@@ -43,6 +43,11 @@ nav ul li a:hover {
     color: #ffd700; /* Golden yellow */
 }
 
+.logo {
+    height: 50px;
+    width: auto;
+}
+
 /* Content Styling */
 .content {
     max-width: 800px;
