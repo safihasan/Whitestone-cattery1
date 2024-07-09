@@ -1,7 +1,7 @@
 import os
 import django_heroku
 import dj_database_url
-from decouple import config, Csv
+# from decouple import config, Csv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -15,12 +15,11 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = [8000-safihasan-whitestonecat-ijh36qh9ti9.ws.codeinstitute-ide.net
-,'.herokuapp.com']
+ALLOWED_HOSTS = ['.codeinstitute-ide.net','.herokuapp.com']
                  
 
 # Application definition
