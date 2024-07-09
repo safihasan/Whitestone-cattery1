@@ -28,3 +28,6 @@ def create_booking(request):
 def booking_list(request):
     bookings = Booking.objects.all()
     return render(request, 'booking_list.html', {'bookings': bookings})
+
+def index(request):
+    return render(request, 'index.html')

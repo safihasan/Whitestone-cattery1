@@ -23,5 +23,5 @@ urlpatterns = [
     path('register/', booking_views.register, name='register'),
     path('create_booking/', booking_views.create_booking, name='create_booking'),
     path('bookings/', booking_views.booking_list, name='booking_list'),
-    path('', booking_views.booking_list, name='home'),
+    path('', booking_views.index, name='home'),
 ]
